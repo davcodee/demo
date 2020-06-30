@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navHomeFragment">
+
+    <fragment
+        android:id="@+id/navHomeFragment"
+        android:name="com.example.demo.UI.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_scheduleFragment"
+            app:destination="@id/navScheduleFragment" />
+        <action
+            android:id="@+id/action_navHomeFragment_to_navScheduleFragmentt"
+            app:destination="@id/navScheduleFragmentt" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navPeopleFragment"
+        android:name="com.example.demo.UI.Fragment.SpeakersFragment"
+        android:label="fragment_speakers"
+        tools:layout="@layout/fragment_speakers" >
+        <action
+            android:id="@+id/action_speakersFragment_to_ubicationDetailFragment"
+            app:destination="@id/navMapFragment" />
+        <action
+            android:id="@+id/action_navPeopleFragment_to_speakersDetailFragmentDialog"
+            app:destination="@id/speakersDetailFragmentDialog" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navScheduleFragmentt"
+        android:name="com.example.demo.UI.Fragment.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" >
+        <action
+            android:id="@+id/action_scheduleFragment_to_speakersFragment"
+            app:destination="@id/navPeopleFragment" />
+        <action
+            android:id="@+id/action_navScheduleFragmentt_to_scheduleDetailFragmentDialog"
+            app:destination="@id/scheduleDetailFragmentDialog" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navMapFragment"
+        android:name="com.example.demo.UI.Fragment.UbicationDetailFragment"
+        android:label="UbicationDetailFragment" >
+        <action
+            android:id="@+id/action_navMapFragment_to_ubicationDetailFragmentDialog"
+            app:destination="@id/ubicationDetailFragmentDialog" />
+    </fragment>
+
+    <!-- Cración de los dialogs de nuestra app-->
+    <dialog
+        android:id="@+id/speakersDetailFragmentDialog"
+        android:name="com.example.demo.UI.Fragment.SpeakersDetailDialogFragment"
+        android:label="SpekerDetailDialogFragment"
+        tools:layout="@layout/fragment_speakers_detail_dialog"
+        />
+
+    <dialog
+        android:id="@+id/scheduleDetailFragmentDialog"
+        android:name="com.example.demo.UI.Fragment.ScheduleDetailDialogFragment"
+        android:label="ScheduleDetailDialog"
+        tools:layout="@layout/fragment_schedule_detail_dialog"
+        />
+
+    <dialog
+        android:id="@+id/ubicationDetailFragmentDialog"
+        android:name="com.example.demo.UI.Fragment.UbicationDetailFragment"
+        android:label="ubicationDetailDialog"
+        tools:layout="@layout/fragment_ubication_detail"
+        />
+
+
+
+</navigation>

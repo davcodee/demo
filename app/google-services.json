@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "455942499162",
+    "firebase_url": "https://amplified-ward-167803.firebaseio.com",
+    "project_id": "amplified-ward-167803",
+    "storage_bucket": "amplified-ward-167803.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455942499162:android:29708417df893a1bdc6163",
+        "android_client_info": {
+          "package_name": "com.example.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "455942499162-mk949hnrtih95b6c1755lco3tlpib7hv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.demo",
+            "certificate_hash": "d0c905bc4d7dd78e6289c0aeaae505a0381b387c"
+          }
+        },
+        {
+          "client_id": "455942499162-stg4v9be09ntco553jpufjis31cg6ove.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1tU1Y8E0c5e31Y-MEVyYMUUjEMZlJFiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "455942499162-stg4v9be09ntco553jpufjis31cg6ove.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
